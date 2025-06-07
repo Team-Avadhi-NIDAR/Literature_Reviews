@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-Disaster management increasingly leverages unmanned aerial vehicles (UAVs) to address real-time challenges such as search, rescue, and payload delivery in areas inaccessible to human responders. This report reviews literature and methods focusing on the integration of dual quadcopter systems—(a) reconnaissance/scanning drone (Drone A) and (b) a payload delivery drone (Drone B)—with a Ground Control Station (GCS). A major focus is placed on two primary communication architectures: centralized communication via GCS and decentralized peer-to-peer (P2P) communication between drones.
+Disaster management is increasingly leveraging unmanned aerial vehicles (UAVs) to address real-time challenges, such as search and rescue and payload delivery in areas inaccessible to human responders. This report reviews literature and methods focusing on the integration of dual quadcopter systems(a) reconnaissance/scanning drone (Drone A) and (b) a payload delivery drone (Drone B) with a Ground Control Station (GCS). A major focus is placed on two primary communication architectures: centralised communication via GCS and decentralised peer-to-peer (P2P) communication between drones.
 
 ---
 
@@ -64,7 +64,7 @@ Here, Drone A sends location data directly to Drone B and GCS simultaneously.
 **Software Options:**
 
 - QGroundControl  
-- Mission Planner (ArduPilot, iNav)
+- Mission Planner 
 
 **Connectivity Tools:**
 
@@ -96,7 +96,7 @@ To improve intelligence and autonomy:
 
 ## 7. Testing and Simulation
 
-Before real-world deployment, simulations ensure system reliability and performance:
+Before real world deployment simulations ensure system reliability and performance:
 
 - **Gazebo** or **SITL (Software-In-The-Loop)** for environment and drone behavior simulation
 - **QGroundControl** paired with **MAVProxy** for mission emulation
