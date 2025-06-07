@@ -109,3 +109,15 @@ Simulated coordination between Drone A and B ensures the timing and data transfe
 
 Integrating two specialized drones with a GCS presents an effective and scalable solution for real-time disaster response. While centralized systems offer simplicity, decentralized setups enhance autonomy and speed. Combined with advanced tools like **ROS** and **YOLO**, such systems hold immense potential in modern emergency logistics and rescue operations.
 
+## References
+
+1. MAVLink Protocol Documentation. *MAVLink Developer Guide*. [https://mavlink.io](https://mavlink.io)
+
+2. Menouar, H., et al. “UAV-enabled intelligent transportation systems for the smart city: Applications and challenges.” *IEEE Communications Magazine*, vol. 55, no. 3, 2017.
+
+3. Yanmaz, E., Yahyanejad, S., Rinner, B., Hellwagner, H., Bettstetter, C. “Drone networks: Communications, coordination, and sensing.” *Ad Hoc Networks*, vol. 68, 2018, pp. 1–15.
+
+4. Zeng, Y., Zhang, R., Lim, T. J. “Wireless communications with unmanned aerial vehicles: Opportunities and challenges.” *IEEE Communications Magazine*, vol. 54, 2016, pp. 36–42.
+
+5. Chen, X., Tang, J., Lao, S. “Review of Unmanned Aerial Vehicle Swarm Communication Architectures and Routing Protocols.” *Applied Sciences*, vol. 10, 2020, article 3661.
+
