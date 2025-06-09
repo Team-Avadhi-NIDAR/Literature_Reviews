@@ -5,3 +5,4 @@
 3. [Sinchan](https://github.com/Team-Avadhi-NIDAR/Literature_Reviews/blob/main/Sinchan.md)
 4. [Huzaifa](./Huzaifa/payload_delivery.pdf)
 5. [Vrishank](./Vrishank.md)
+6. [Moiz](./moiz.docx)
