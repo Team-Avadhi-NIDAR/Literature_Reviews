@@ -2,6 +2,8 @@
   numbering: "1."
 )
 
+#show link: underline
+
 *NAME*: Vaishnav Sabari Girish
 
 *USN*: 22BTREC021
@@ -39,17 +41,53 @@ The scouting drone scans the whole area and then geotags the locations where the
 - Studies have shown success in detecting human dummies and translating pixel coordinates to real-world coordinates for efficient SAR operations. @applications-of-drone-dm
 - Audio processing can also be used for human detection at disaster sites by mounting array microphones on UAVs. @applications-of-drone-dm
 
+===== Hardware Configuration 
+
+1. *Processor*
+Raspberry Pi 5 has the highest computing power of all the current Raspberry pi boards. It's main specifications include 
+    - *RAM*: 8GB DDR4 RAM 
+    - *Processor*: 64-bit ARM Cortex-A76
+    - *Clock Speed*: 2.4GHz.
+
+
+2. *Imaging System*
+The Raspberry Pi AI Camera features a 12.3 MP SONY IMX500 intelligent vision sensor, with a 4.74mm focal length. 
+The camera supports image , RGB output. 
+It consists of an in-built Neural Network Accelerator for low power inference and comes pre-loaded with the MobileNet SSD object detection model. 
+
+YoLo (You Only Look Once) is a popular object detection model which can also be used on the Raspberry Pi AI Camera. Thgis paper uses it @human-detection. 
+
+The YoloCam project by Qengineering presents a ready-made model to be uploaded the either a Raspberry Pi 4, 3 or a Zero W. 
+
+It provides action-based output i.e we can define the actions it should do if it detects a certain object. 
+
+#link("https://github.com/Qengineering/YoloCam")[YoloCam]
+
+Unfortunately, the YoloCam project is paid to use and not free. 
+
+Currently the YoLoV8 for the AI camera has been discontinued as the repository has been deleted. 
+But, it is possible to recover the last commit made to that repository by following the steps in the following article. 
+
+#link("https://freedium.cfd/https://gektor650.medium.com/yolov8-object-detection-model-for-a-new-raspberry-pi-ai-camera-sony-imx500-ab50328ffb76")[YoLoV8 with the AI Camera]
+
+
 ==== Geotagging and Mapping 
 
 - Drones can rapidly acquire high-resolution aerial photographs to assess disaster impact, reducing labour needs for surveying affected areas and providing timely information for disaster mitigation. @humanitarian-drones
 - Orthophotos (Geometrically corrected aerial photos) created from drone image data can be overlaid with Google Maps to assess the current extent of destruction. @disaster-blessem
 - Image processing techniques, including edge detection, can help in measuring water levels and identifying landmarks such as houses and buildings to locate stranded people. @post-flood
 
+*STEPS*
+
++ The drone's initial location is set when the copter is switched on (armed). This also serves as a return point. 
++ When the scouting drone detects humans, it uses it's GPS sensor to then mark latitude and longitude of that area i.e geotagging. This data is converted into the *.kml* (Keyhole Markup Language) which is an XML file format to store geographical data. 
+
 ==== Communication for Information Transfer 
 
 The scouting drone would need robust communication capabilities to transmit the geotagged survivor locations and imagery back to a ground control station or directly to the delivery drone. We can transmit the geotagging data as a *.kml* file which consists of the co-ordinates of the geotagged survivors. @uav-comm-1
 
 The delivery drone reads the *.kml* file and then flies to the co-ordinates and drops the emergency aid kit. 
+
 
 
 == DELIVERY DRONE
